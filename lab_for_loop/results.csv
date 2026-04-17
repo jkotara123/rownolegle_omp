@@ -1,4 +1,4 @@
-threads;schedule_type;chunk_size;time;N
+threads;schedule_type;chunk_size;N;time
 6;0;4;10000000;0.029802
 6;0;1000;10000000;0.013910
 6;0;1000000;10000000;0.015231

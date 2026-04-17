@@ -2,7 +2,7 @@
 
 gcc -fopenmp sample_generator.c -o sample_generator
 
-echo "threads;schedule_type;chunk_size;time;N" > results.csv
+echo "threads;schedule_type;chunk_size;N;time" > results.csv
 
 SIZES=("10000000" "1000000000")
 
