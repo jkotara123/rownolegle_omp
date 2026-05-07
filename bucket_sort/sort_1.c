@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
     double t_gen_start = omp_get_wtime();
     generate_array(array, N, max_value, 0, 1000);
     double t_gen_end = omp_get_wtime();
-    printf("%f ", t_gen_end - t_gen_start);
+    printf("%f,", t_gen_end - t_gen_start);
     
     bucket_sort_parallel(array, N, max_value, bucket_num);
 
@@ -137,9 +137,9 @@ void bucket_sort_parallel(int *array, long long N, int max_value, int bucket_num
     t_merge = t6 - t5;
     
     free(global_buckets);
-    printf("%f ", t_dist);
-    printf("%f ", t_sort);
-    printf("%f ", t_merge);
+    printf("%f,", t_dist);
+    printf("%f,", t_sort);
+    printf("%f,", t_merge);
 
     free(thread_sizes);
     free(offsets);
